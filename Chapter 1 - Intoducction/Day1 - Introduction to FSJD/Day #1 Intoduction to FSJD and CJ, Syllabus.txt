@@ -1,0 +1,153 @@
+Day #1: Introduction to FSJD and Core Java Syllabus
+===================================================
+01. Course Title?
+	Full Stack Java Development and Core Java
+	with Interview preparation and Project
+	 From Zero to 100% 
+
+02. Target of this course?
+	Making You Full Stack Developer
+	for developing one complete project end-to-end
+	by using 'Java' or 'Any Programming Langauge' and technologies
+		
+03. What is Full Stack Development?
+	It is a course where we will learn
+	developing one full project end-to-end
+	all three parts 'UI, Programming and DB'.
+	
+04. Full Stack Java Development Syllabus?
+	- Full Stack Java syllbus is divided  into 5 modules
+	
+	  Java Module		 		Data Base module	UI Module
+	   1. "Core Java" (HK)	   	1. Oracle	        	1. HTML
+	   2. "Adv Java"  (HK)			1. SQL 		 		2. CSS	
+	   3. Spring, Spring Boot		2. PL/SQL		 	3. Java Script	
+	   4. Micro services				 							4. Bootstrap
+	   5. Mini projects				 								5. React JS
+	
+	  DevSecOps tools module					AWS basics module
+	    - Log4j, SL4J			  							1. Creating AWS account	
+	    - Maven, Gradel			  					2. Installing DB sw
+	    - GIT, GITHub			  						3. Installing Tomcat sw	
+	    - JUnit, HttpUnit, Mokito		  		4. Deploying project, running project	
+	    - JIRA, Jenkins, Docker, Kafka	  	5. Providing project access to client
+	    - ..... (15+ tools)
+	    
+05. Road map to complete Full Stack Java courses?
+      - We can complete full stack Java in a 2 modes 
+	  1. Sequentially one course after another course 
+	  	[For college students and Working Employee]
+		Duration: 1+ years
+		
+	  2. Parallely 3 courses per day 
+		[For college completed students]
+		Duration: 6+ months
+		
+       ========================= Parallel Courses ==============================================  
+	Level #1:   
+		[Core Java] +  [Oracle]  +  [HTML, CSS, JS, BS]	       
+		
+	Level #2:   
+		[Adv Java]  +  [DevOps tools]  + [AWS Basics]		-> Fresher JoB	
+									     
+	Level #3:   
+		[Spring Basics, Spring Boot, Microservices] + [React]  -> Exp JoB
+      ============================================================================  
+
+06. Placement Screenning Test exam syllabus?
+     - You can attend placement exam only after below 4 courses completed 
+	1. Core Java
+	2. Oracle
+	3. HTML, CSS, Java Script, BS
+	4. Adv Java
+	
+     - Exam pattern MCQ's and Scenario based logical programs questions 	
+     - Screening test exam is only offline mode exam 
+       you must come to Hyderabad to write 	
+
+07. Fee and duration?
+	FSJD fee: Rs.20,000* 
+	Duration: 6+ months
+	Material: The particular course faculty 
+	          will share material via 
+		  google classroom or google drive
+	Recordings and placements: contact admin
+	
+08. Admin details?
+    ======================================
+	For Offline students:
+		Mr. Surendra: 849 7904 673
+		
+	For Online students:
+	    Miss. Rajeshwari -733 7313 417
+    ======================================
+	For both offline and online students
+		Faculty HK: 9010 4545 84
+    ======================================
+    Note: Donot call, only send whatsapp message
+    
+09. Whatsapp group link
+     Next batches details will be posted here
+	https://chat.whatsapp.com/L73nyRRl9Yp15Q45imphoG
+	
+10. Google classroom 
+	- I will share daily material through goolge class
+	- Google classroom access will be given only for paid students
+	- Your class admins will add your to google classroom
+	- Once your payment is complete, 
+		- offline students show payment reciept or id to admin Venu
+		- online students share payment screenshot to admin Satish through whatsapp
+		  
+Introduction to Core Java
+===============================
+01. What is Core Java?
+	- The Core Java is the main and the first course 
+	  in Full Stack Java 	
+	
+02. What will we learn as part of Core Java?
+    - As part of core java we will learn
+	1. Java Languague concepts such as 
+		- Programming elements, keywords
+		- Data types, operators, control flow statements,	
+		- OOP concets, etc...
+		- Java Library (SH, EH, MT, Collections, etc...)
+		
+	2. Developing programs
+		- Addition, substraction, etc...
+		
+	3. Developing projects
+		- Bank, Online Shopping, Ticket Reservation, etc...
+		  but all those projects can be only stand-alone projects
+		  can not accessed from other computers via internet
+		  
+03. What is the diff bw Core Java, Adv Java & Spring, Spring Boot?
+	- by using Core Java, we can develop only stand-alone application
+	
+	- by using Adv Java, we can develop internet applications, 
+	  but its development is slow
+	  
+	- by using Spring and Spring Boot we can achieve fast developemnt
+	
+	- In companies all projects are web or intenet applications
+	- hence to develop and fast develop, in comparnies
+	  we use    [CJ     +   Spring Boot]
+	
+04. What is the syllabus of Core Java?
+   - We devided core java syllabus into 5 units
+	Unit #1: Java Fundamentals	[Basic programs development]
+	Unit #2: Logical programming	[Math based programs development]
+	Unit #3: Object-Oriented programming[Business applications development]
+	Unit #4: Java libraray		[Predefined classes given by Java]
+	Unit #5. Project development	[UI + Programming + DB[File system]]
+	
+05. Duration, fee, recordings, class timing?
+	Duration: 3 months
+	
+	Fee	: Rs. 3500 without recordings
+		      Rs. 6000 with    recordings
+		  
+	Time	: Daily 9:15AM to 10:50AM [1:30 to 1:45 minutes daily]	  
+	Weekly	: 6 days per week [Mon-Sat], [Sunday is a Self Revision day]
+		  
+
+

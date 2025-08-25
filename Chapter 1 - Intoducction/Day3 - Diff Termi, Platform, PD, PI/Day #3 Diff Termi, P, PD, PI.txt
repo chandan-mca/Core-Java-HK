@@ -1,0 +1,114 @@
+Day #3: Diff Termi, Platform, PD, PI 
+===================================================================
+05. Different Terminologies used in all programming languages?
+06. What is a platform, Platform dependency, Platform independency?
+====================================================================
+
+Different Terminologies used in all programming languages
+=========================================================
+ In all programming langauages we have 10 different terminologies
+
+ 1. Source code			-> Abc.c        Abc.cpp     Abc.java     Abc.py
+ 2. Compiled code	-> Abc.obj    Abc.obj      Abc.class      |
+ 3. Executable code	-> Abc.exe    Abc.exe          |           	 |    
+											  |		        |	               |	             |
+									    	\|/	          \|/	         \|/	           \|/    
+											O/P	  		  O/P	    	  O/P	       O/P
+											
+ 4. Compilation			-> Converting SC -> CC	
+ 5. Execution				-> Running CC to get O/P
+ 
+ 6. Compiler				-> Translation software that converts SC 			-> CC and saves 
+ 7. Interpreter			-> Translation software that converts SC/CC 	-> ML -> exe
+ 
+ 8. Compiled PLs		-> The PL that uses only Compiler 						-> ex: C and C++
+ 9. Interpreted PLs	-> The PL that uses only Interpreter 					-> ex: JS and Python
+ 10. Compiled & Interpreted PLs -> The PL that use both C and I 	-> ex: Java and C#.NET
+
+ What are the differences between Compiler and Interpreter?
+ ====================================================================================
+		Compiler																						Interprepter
+ ====================================================================================
+ 1. Compiler converts complete SC to CC				1. Interpreter converts either SC/CC
+    at a time and saves the CC in a new file        			line by line into ML code and 
+    in the hard disk in the PWD                     					executes that line directly, 
+																							it does not save it in Hard Disk
+						   
+ 2. Compiler is used for comilation							2. Interpreter is used for execution
+    means [convert and save]			   								means[convert, run & produce O/P]
+
+ 3. Compiler is faster than interpreter					3. Interpreter is slower that compiler
+    because it converts entire SC at a time        			because it converts SC/CC line by line
+ ====================================================================================
+	-> SC -> Source Code
+	-> CC -> Compiled Code
+	-> PWD -> Present Working Directory in which the SC is saved
+		refere the attached diagram
+ ====================================================================================
+   
+05. What is a Platform, Platform dependency, Platform independency?
+     Platform
+      - A platform is a runtime environment in which a program is loaded & executed. 
+      - A platform can be software only platform or hardware only platform or both. 
+     
+      - A computer platform is both software and hardware based platform , 
+        that is OS, processor and hardware devices (ram and hard disk) 
+ 
+      - A 'C and C++' program platform is OS, it means 
+        'C and C++' programs are executed by OS directly
+
+      - A Java program platform is 'JVM', It means 
+       Java programs are not executed OS, they are executed 
+       by one special intermediate software called 'JVM'. 
+       
+	- Java program platform is JVM and JVM platform is OS 
+
+      - A Python program  platform is 'PVM'.
+      - A .Net   program  platform is 'CLR'.
+      - A HTML   page     platform is 'Browser'.
+      - A audio and video files    platform is 'Media player(VLC)'.
+     Refer the attached diagram
+     
+     Platform Dependency
+      - A program that is developed in one OS, ex: windows,
+        if it can not execute in a different OS, ex: Linux or Mac,
+        We call this program as platform dependent program
+       
+      - The programming language using which we develop this program 
+        is called platform dependent programming language  
+
+      Refer the attached diagram	
+
+     Platform Independency
+      - A program that is developed in one OS, ex: windows,
+        if it can be executed in different OS, ex: Linux or Mac, 
+        We call this program as platform independent program
+       
+      - The programming language using which we develop this program 
+        is called platform independent programming language.  
+
+
+       Refer the attached diagram	
+	
+    Conclusion:	 
+      - If a program or a software is directly executed by OS,
+        then this program or software is a platform dependent 
+	program and platform dependent software
+	
+      - If a program is executed by intemediate software,
+        like JVM, PVM, CLR, then this program is platform independent program 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

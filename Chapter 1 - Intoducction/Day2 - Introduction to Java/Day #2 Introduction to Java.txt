@@ -1,0 +1,94 @@
+Day #2: Introduction to Java 
+===================================================================
+01. What is Java?
+02. Why Java?
+03. Who invented Java?
+
+04. Types of applications (SA and IA)?
+
+05. Different Terminologies used in all programming languages?
+06. What is a platform, Platform dependency, Platform independency?
+07. Why C and C++ languages are Platform Dependent?
+08. How Java achieved Platform Independency?
+09. Important facts on Java program and Java Software?
+
+10. Types of Java softwares?
+11. Difference between JDK, JRE and JVM?
+12. Why JRE is removed in Java 11v?
+13. Downloading and installing JDK software? 
+
+14. Softwares required to develop, compile and execute a Java program?
+15. Java Programming Elements?
+16. Java Essential Statements? 
+17. Developing Hello, World program?
+18. Compilation and execution procedure?
+19. Compiler and JVM activites, Basic JVM Architecture?
+21. Solving compile time errors and runtime errors by our own?
+22. Some more example programs?
+=================================================================================
+01. What is Java?
+	- Java is a Platform Independent
+	  Object-Oriented programming language.
+	  
+02. Why Java is invented?	  
+	- Java was invented to achieve Platform Indepency
+	  for developing internet based business application
+	  
+03. Who invented Java, in which year, released in which year?
+	- Java was invented by Mr. James Gosling
+	  in SUN Microsytems in the year 1991
+	  for developing network based applications
+	  
+	- The first test version of Java  is relased 
+	  in the year 1995
+	  
+	- The first version of Java 1.0 is relased 
+	  in the year 1996 for developing projects
+
+04. Types of applications?
+	- All available softwares or projects or applications
+	  are broadly divided into 2 types
+		1. Stand-alone applications
+		2. Internet applications
+
+	- An application that is installed in one computer
+	  and can be accessible only with in this computer
+	  and can't be accessible from other computers via 
+	  network is called stand-alone application
+
+		For example: 
+		  ATM, Calculator, MS-Office, Antivirus, VLC, ... are SA.
+		  
+	   Below diagram shows SA:
+	   
+	   
+	   
+	   
+		
+	- An application that is installed in one computer
+	  and can be accessible from other computers throughout 
+	  the world via network is called internet application
+	  
+		For example:
+		  Amazon, irctc, instagam, bookmyshow, youtube, gmail,
+		  Naresh IT, HKProgrammingWorld, etc... are IA
+	 
+	- Below diagram shows IA:
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	- A  SA is a single computer and single user application
+	- An IA is a multi computer and multi user application
+     
+	   Q1) Is browser a SA or IA?
+		- SA, because we install it in our computer
+		  and access it with in our computer 
+		  
+	   Q2) Is mobile app a SA or IA?
+		- SA, because we install it in our mobile
+		  and access it with in our mobile 
