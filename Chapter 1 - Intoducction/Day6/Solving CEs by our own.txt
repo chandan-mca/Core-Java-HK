@@ -1,0 +1,73 @@
+Closer Look at HW program, solving CEs and REs
+======================================================
+20. Closer look at HW program
+
+   class FirstProgram {
+      public static void main(String[] args) {
+ 	 System.out.println("HKProgrammingWorld!");
+      }	
+   }
+	
+ - In the above program the words 'class, public, static, void' are keywords. 
+   We must use them with all letters lower case, becuse they are created in 
+   Java language with all letters lower case.
+  
+ - The name 'main' is not a keyword, it is just a name of the method.
+   we must also use the all letters lower case, because it is also
+   predefined name
+  
+ - The names 'String, System' are predefined class names  
+   which are available as part of JDK software. We must use them
+   with first letter capital letter.
+  
+ - The names 'FirstProgram and args' are user defined names
+   we can use either same name or different name 
+   either with small letters or capital letters its our wish
+   but we can not use space in between words.
+  
+ - It is recommanded to place '{' in the same line of class and method
+   creation, we can place it in next line, but it is C language syntax style.
+  
+21. Types of errors occured in the program
+	- In a program we will get 2 types of errors
+		1. Compiletime Errors	(CEs)
+		2. Runtime Errors	(REs)
+    
+	- An error that is occurred during a program compilation
+	  is called comile time error. A CE is occurred due to 
+	  syntax mistakes (wrong typing or wrong spelling). 
+	  The Compiler throws CEs.
+		For example: placing a statement without ends with ;
+		             is a syntax mistake
+    
+	- An error that is occurred during a program execition
+	  is called runtime error. A RE is occurred due to 
+	  logical mistakes (wrong value or wrong logic). 
+	  The JVM throws REs.
+		For example: main method is not avilable in the class
+		             is a logical mistake   
+
+22. How can we become expert in a PL and How can we easily pass 
+    'Written Test Exam'?
+	- Learn as many CEs and REs as possible
+	- Solve as many problems as possible  
+	
+23. Solving CEs and REs by ourself?	
+    - To find max number of CEs and REs
+    remove or modify the parts of the program
+    as shown in the below take
+     ============================================	
+	  Senario		Expected Result
+     ============================================	
+	1. remove ;		CE: ';' is expected
+	2. remove "		CE: unclosed String literal
+	3. change S to s	CE: package system does not exist	
+		 ...
+		 ...
+		 ...
+		 ...
+		 ...
+		 ...
+	30. ...
+    
+     ============================================	

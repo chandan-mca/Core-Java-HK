@@ -1,0 +1,43 @@
+Day #5: Important facts and Types of Java Softwares
+==============================================================
+08. Important facts on Java program and Java software?
+	Refer diagrams
+
+09. Types of Java software?
+	Java has two types of softwares
+		1. JDK 
+		2. JRE
+		
+	Refer diagrams
+	
+10. Difference between JDK, JRE and JVM?
+      JDK  
+	- JDK stands for Java Developement Kit.
+	- It provides development tool compiler, runtime envronment JVM and API
+	- Hence by using JDK software we can develop, compile and execute new 
+	  program also can modify existing programs
+	- In developer computer we must install JDK   
+	 
+      JRE  
+	- JRE stands for Java Runtime Environent.
+	- It provides only runtime envronment JVM and API
+	- Hence by using JRE software we can only execute existing programs
+	- In Client/Customer computer we must install JRE
+	
+      JVM
+	- JVM stands for Java Virtual Machine.
+	- It is a Java platform, its translation software
+	- It is responsible for running Java bytecode by converting it into 
+	  current OS machine language 
+      
+11. Why public JRE is removed in Java 11v?
+	- In modren web applications development
+	  the client UI prages are developed by using
+	  HTML, CSS and Java script or React, for running
+	  HTML pages JRE is not required just Browser is sufficent
+	  
+	- Hence JRE is not being used in a client system
+	  so it is removed in Java 11v
+	
+	- From Java 11v onwards we have 
+	  only one Java software that is JDK

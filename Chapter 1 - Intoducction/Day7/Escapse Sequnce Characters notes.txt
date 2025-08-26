@@ -1,0 +1,406 @@
+Escape Sequence Characters
+-----------------------------------
+- A character preceded by a backslash (\) is an escape sequence. 
+  It has special meaning to the Compiler, JVM and Console softwares.
+
+- Every escape character must be started with \ following by 
+  a single character.
+
+- When we place \ before the character it is not consider as a regular 
+  character, either some special meaning will be added or removed.
+
+- For example:
+	- If we use just n, n is displayed as it is.
+		System.out.println("Hari n Krishna"); 
+			O/P is:	Hari n Krishna
+
+	- If we place \ before n, its meaning is not n 
+	   it is a new line, n is not displayed, rather 
+	   new line is displayed, means the characters
+	   placed after \n are moved to next line.
+		System.out.println("Hari \n Krishna"); 
+			O/P is	
+				Hari 
+				  Krishna
+The rule is:
+	- After \ we can not place all characters as we like, 
+	  we are allowed to place only few characters
+
+	- Those few characters list will be changed from 
+	  one language to another language.
+
+- Java supports 9 escape sequence characters
+
+   Escape 
+   Sequence		Description
+	\n	Inserts a newline in the text at this point.
+	\t	Inserts a tab space in the text at this point.
+	\r	Inserts a carriage return in the text at this point.
+
+	\s	Inserts a space in the text at this point. (Available from Java 14v)
+	
+	\f	Inserts a formfeed in the text at this point.
+	\b	Inserts a backspace in the text at this point.
+
+	\'      Inserts a single quote in the text at this point.
+	\"	Inserts a double quote in the text at this point.	
+	\\	Inserts a backslash in the text at this point.
+
+	In addition to above characters Java also supports
+	below 8 octal digits after \
+		\0 - it inserts null character(means nothing or empty)
+		\1 -
+		\2 - 
+		\3 -
+		\4 -
+		\5 -
+		\6 -
+		\7 -
+
+	Java also supports UNICODE escapse sequence 
+	which is starts with \u as below
+		\uxxxx --> unicode number
+		- xxxx are any 4 hexa decimal digits [0-9a-f]
+		for example: 
+			\u0037
+			\uAB37
+
+Working with \n
+===============
+- The \n is called new line escape sequence character
+- It is used for inserting one new line in this text either 
+  at beginning or in the middle or at end of this text
+- The characters we placed after \n will be
+  moved to next line and displays in the next line
+
+Program #4: Develop a program to display your name 
+in two lines with single Sopln
+	I/P:			O/P:
+	Hari Krishna		Hari
+					Krishna	
+
+
+Working with \t
+===============
+- The \t is called tab space escape sequence character
+- It is used for inserting or displaying one tab spaces means 8 spaces in this text
+- The \t does not insert 8 characters always. It inserts either 8 or 
+  lesser than 8 spaces depending on the number of characters available to its left side
+	- Before \t zero characters are present or if already 8 characters are present 
+	  it inserts 8 spaces.
+	- if there are some characters already present, then it inserts spaces 
+	  for only those remaing positions. 
+
+  	For example:
+	 \tHari		=> here \t inserts only 8 spaces because there no character before \t
+	 Ha\tri		=> here \t inserts only 6 spaces because already 2 characters are there
+	 Hari Kri\tshna	=> here \t inserts 8 spaces here, because before \t already 8 characters are there
+	 Hari Krishn\ta	=> here \t inserts 5 spaces here, becaue before \t 3 character are there
+
+	Q) What is the out put from the below program?
+		class Test {						O/P:
+			public static void main(String[] args){		====
+				System.out.println("sno:  101");	sno: 101
+				System.out.println("sname: Hari");	sname: Hari
+				System.out.println("course: Core Java");course: Core Java
+				System.out.println("fee: 2500");	fee: 2500
+			}
+		}
+
+	Q) Rewrite above program to get all :s in single vertical line in output?
+		class Test {					 	  O/P:
+			public static void main(String[] args) {	  ===============
+				System.out.println("sno\t: 101");	  sno_____: 101
+				System.out.println("sname\t: Hari");	  sname___: Hari
+				System.out.println("course\t: Core Java");course__: Core Java
+				System.out.println("fee\t: 2500");	  fee_____: 2500
+			}
+		}
+
+
+Program #5: Develop a program to display your name in the below pattern
+		I/P:	O/P:
+		H	H
+		A		A
+		R			R
+		I				I
+
+		class NamePattern {
+			public static void main(String[] args) {
+			    System.out.println("H");
+			    System.out.println("\tA");
+			    System.out.println("\t\tR");
+			    System.out.println("\t\t\tI");
+			}
+		}
+
+Escape sequence characters combination usage:
+==========================================
+- We can also use escape sequence characters combined based on our requirement
+
+Program #6: Develop a program to display the same above output with single Sopln(-)
+To develop this program we must use \n and \t combination
+
+	//NamePatternWithSingleSopln.java
+	class NamePatternWithSingleSopln {
+		public static void main(String[] args) {
+			System.out.println("H\n\tA\n\t\tR\n\t\t\tI"); 
+		}
+	}
+
+Working with \s (available from Java 14v)
+=========================================
+- The \s is called space escape character
+- By using \s we can insert one space in this text
+- It is available from Java 14v for supporting new feature "text blocks"
+- In Java14v "text blocks" feature is added as "preview" feature and in 
+  Java 15v it is made as permanent
+	
+Program #7: Develop a program to show the usage of \s 
+		I/P	O/P
+		HK      H K
+       
+		//SlashS.java 
+		class SlashS {
+		   public static void main(String[] args) {
+		       System.out.println("Hari\sKrishna");
+		   }
+		}
+
+		//NamePattern.java
+		class NamePattern {
+		   public static void main(String[] args) {
+		       System.out.println("H");
+		       System.out.println("\sA");
+		       System.out.println("\s\sR");
+		       System.out.println("\s\s\sI");
+		   }
+		}
+
+Working with \" and \'
+=======================
+- The \" is called as double quote escape character
+- It is used to substitute the double quote(") itslef in the text
+- The double quote(") has special meaning in Java, 
+   it is consider as string literal open and close.
+- For placing double quote(") within another "" we must place it as \". 
+  The \ suppresses its special meaning and consider it as normal character 
+  double quote(") 
+
+- The \' is called as single quote escape character
+- It is used to substitue the single quote(') itself in the text
+- Like double quote("), if we want to place single quote(') wihtin single quote ' '
+  we must us \' else compiler consider its as char literal open or close,
+  we will get compile time error empty chararacter literal
+
+- For placing " in " ", we must use \"
+- For placing ' in  ' ', we must use \'
+
+Program #8: Develop a program to display your name in "" and in '' on console
+		I/P		O/P		
+		  Hari		"Hari"	
+		  Hari		'Hari'	
+	  class NameInQuotes {
+	    public static void main(String[] args) {
+		//System.out.println(""Hari Krishna"");
+
+		System.out.println("\"Hari Krishna\"");
+		System.out.println("'Hari Krishna'");
+
+		//System.out.println(''');	
+		System.out.println('\'');	
+								
+		//System.out.println(""");	
+		System.out.println("\"");	
+
+		System.out.println("'");	
+		System.out.println('"');	
+
+	    }					
+	}
+
+
+Working with \\
+================
+- The \\ is called as back slash escape character
+- It is used for substituting one back slash (\) as it is
+- In a text of character \ is consider as escape character prefix
+  then the character placed after \ must be a valid escape character 
+- To use \ as \ we must use \\.
+- To use or print \ either in " " or in ' ' we must place \\
+
+Program #9: 
+	class FilePath {
+		public static void main(String[] args) {
+			//System.out.println("D:\abc\xyz\names.txt");
+			System.out.println("D:\\abc\\xyz\\names.txt");
+		
+		
+			System.out.println("D:\new\text\snames.txt");
+			System.out.println("D:\\new\\text\\snames.txt");
+
+		}
+	}
+
+Working with \r
+================
+- The \r is called as carriage return escape character
+- In some editor console it work as \n as new line it means 
+  like \n, \r also moves its right side characters to next line
+- But in some other editor console it act as return character. 
+  It means it moves its right side characters to the beginnning 
+  of the same line and replaces the existing characters
+- It replaces the number of characters equals to the number of 
+  characters exists to its right side
+
+Program #10:
+	class SlashR{
+	   public static void main(String[] args) {
+	       System.out.println("abcde\rf"); //fbcde
+	       System.out.println("abcd\ref"); //efcd
+	       System.out.println("abc\rdef"); //def
+	       System.out.println("ab\rcdef"); //cdef
+	       System.out.println("abcdef\r"); //abcdef
+	       System.out.println("abcdef\r ");// bcdef 
+	   }
+	}
+
+//Note: \r has two functionalities
+//1. moves its right side characters 
+//   to beginning of same line and replaces 
+//   the existing characters
+
+//2. moves its right side charactes
+//   to next line like \n, no replacement
+//   operation here
+
+//in command prompt console, 
+//   \r gives first functionality
+
+//in eclipse console, 
+//    \r gives second functionality
+// it means \r acts as \n
+
+Working with \b
+================
+- The \b is called as backspace escape character
+- It is used for removing it's left side character
+
+- Actually the remove operation is done with replace operation
+- It replaces the leftside character with characters
+  available its righ side by moving one location to left
+	  	Hari \bKrishna => HariKrishna
+
+Case #1: if there are no characters right side of \b
+         it will not remove any character, it returns 
+	 same text as it is, because there is no character to replace 
+		abcdef\b  => abcdef
+
+Case #2: if there is one character right side of \b
+         it will remove one character to its left side, 
+	 returns the changed text  
+		abcde\bf  => abcdf
+
+Case #3: if we use multiple \bs, it will not remove its left side 
+    characters sequentially like the keyboard backspace key.
+    First it moves cursor to its left side, number characters
+    equals to number of \bs, then it starts replacing 
+    characters from this location with its left side characters
+
+	abcde\b\bf	 => abcfe    		
+	abcde\b\b\bf	 => abfde
+	abcd\b\b\bef	 => aefd
+
+Program #11:
+	class SlashB{
+	   public static void main(String[] args) {
+	       System.out.println("abcdef\b"); 
+	       System.out.println("abcd\bef"); //efcd
+	       System.out.println("abcde\b\bf"); //def
+	       System.out.println("ab\b\b\bcdef"); //cdef
+	       System.out.println("abcde\b\b\bf"); //abcdef
+	   }
+	}
+
+
+Working with \f
+================
+- The \f is called as form feed escape character
+- While printing a document, from the middle of the text 
+  if we want to place it as a paragraph, we must use \f
+- The \f is not understood to command prompt, hence
+  it will display some symbol for \f.
+- It will be understood to printers.
+- In some console windows it works like \n
+  means it moves the text to next line to start it as a paragraph
+
+Program #12: Below program show the usage \f
+	class SlashF{
+	  public static void main(String[] args){
+	       System.out.println("123\f456");
+	  }
+	}
+
+
+Working with octal digits escape characters \0 to \7
+====================================================
+- Like \r \b \f, these escape charaters are also not used in 
+  regular program.
+- These escape characters are also displays some symbols.
+- only \0 is used in program it represents null character 
+  means empty character which is the default value of char variable
+
+Program #13: Below program explains the usage of octal digits
+class OctalDigits {
+  public static void main(String[] args){
+    System.out.println("a\0b");
+    System.out.println("a\1b");
+    System.out.println("a\2b");
+    System.out.println("a\3b");
+    System.out.println("a\4b");
+    System.out.println("a\5b");
+    System.out.println("a\6b");
+    System.out.println("a\7b");
+    //System.out.println("a\8b");
+    //System.out.println("a\9b");
+    System.out.println("a\10b");
+    System.out.println("a\11b");
+    System.out.println("a\12b");
+    System.out.println("axyz\10\10b");
+  }
+}
+
+
+Program #7: Explain all above escape sequence characters functionality with a program
+class EscapeSequence {
+	public static void main(String[] args) {
+		System.out.println("Hi\fHello");
+		System.out.println("HiHello\f");
+		System.out.println("\fHiHello");
+		System.out.println("HRU?");
+		System.out.println();
+		System.out.println("Hi\bHello");
+		System.out.println();
+		System.out.println("Hi\nHello");
+		System.out.println();
+		System.out.println("Hi\tHello");
+		System.out.println();
+		System.out.println("Hi\rHello");
+		System.out.println("HiHello\rHRU?");
+		System.out.println("HiHelloHRU?\r");
+		System.out.println("\rHiHelloHRU?");
+		System.out.println();
+		// System.out.println("""); //DQ in DQ is not allowed
+		// System.out.println('''); //SQ in SQ is not allowed
+		System.out.println("\"");
+		System.out.println('\'');
+		System.out.println('"'); //In SQ DQ is allowed
+		System.out.println("'"); //In DQ SQ is allowed
+		// System.out.println("\"); //HERE \ IS CONSIDERED AS ESCAPER
+		// System.out.println('\'); //HERE \ IS CONSIDERED AS ESCAPER
+		System.out.println("\\"); //We must use \\ to consider \ as a \
+		// System.out.println("\\\");
+		System.out.println("\\\\");
+	}
+}
+

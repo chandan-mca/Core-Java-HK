@@ -1,0 +1,179 @@
+Day #6: Installing JDK, HW Program development
+=================================================
+14. Downloading and installing JDK software? 
+
+15. Softwares required to develop, compile and execute a Java program?
+16. Java Programming Elements?
+17. Java Essential Statements? 
+18. Developing Hello, World program?
+19. Compilation and execution procedure?
+20. Compiler and JVM activites?
+=================================================
+
+14. Downloading and installing JDK software? 
+	1. Open Browser
+	2. Type 'JDK 21 download', press enter
+	3. Click 'Java Downloads'-> JDK download page will be shown
+	4. Scroll down the page -> Click JDK 21 -> Click Windows/macOS  
+	5. Click 'jdk.exe' / 'jdk.dmg' file link, download is started
+	
+	6. After downloading is completed
+	
+	7. Click on JDK.exe file -> click yes -> Click Next
+	8. Click 'Change' -> remove 'Program Files\Java\' carefully
+	   make path as 'C:\jdk-21\' -> Click Ok
+	9. Click 'Next' -> installation is completed -> click 'Close'
+	10. JDK software is installed in 'C:\jdk-21'
+	    This folder is called JAVA_HOME
+
+    - Test whether JDK is running or not?
+    	- Open command prompt [press start -> type cmd -> press enter]
+
+	- Type the command 'javac  -version' press enter
+	   it must display javac 21.0.x
+
+	- Type the command 'java  -version' press enter
+	   it must display java version "21.0.x" 
+	
+    - JDK software is installed and running successfully
+    - Now we can develop programs
+
+
+15. Softwares required to 'develop, compile and execute' a Java program?
+	For developing, compiling and running a java program 
+	we need 3 software
+		1. Editor SW  -> Development (Type and Save)
+		
+		2. JDK    SW  -> For obtaining 'Compiler, JVM and Library' into our computer
+		
+		3. CMD    SW  -> For running 'compiler and jvm' softwares 
+		                 for compiling and executing our java program 
+				 
+	We have all above three SWs in out computer,
+	No we can develop a Java program
+
+16. Java Programming Elements:
+    Java supports 8 programming elements
+	==============================================================================
+	Progrmming Elements		purpose
+	==============================================================================
+ 	  1. Module		-> for grouping packages
+	  2. Package		-> for grouping classes
+	  3. Class		-> for representing RWO in PW
+	  			   and for grouping variables and methods
+	  4. Variables		-> for representing values and allocating memory 
+	  5. Methods		-> for representing operations
+	  6. Constructors	-> for storing values on variables
+	  7. Blocks		-> also for storing values in variables
+	  8. Inner classes	-> for representing inner object of an outer object	
+	=================================================================================	
+	
+17. Essential statements to develop, compile, execute and print some message on console?
+	- Java provides 3 essential statements	
+		1. class			-> for developing and compiling
+		2. main method			-> for executing
+		3. System.out.println(-);	-> for printing a value or message
+	
+	- The class is essential, because Java is an OOP langauge,
+	  hence every program must starts with a class
+	
+	- The main method is essential, because main method is the 
+	  initial point of class execution. JVM executes a class
+	  starts with main method.
+	  	Note: if class does not have main method,  
+		      JVM throws error: 'main method not found'
+
+	- The System.out.println(-); is essential, because 
+	  in Java we can print any value or message only by using
+	  System.out.println(-);
+
+18. Java program structure
+	- class contains main method, 
+	  main method contains S.o.println(-)  statement
+
+	class  <ClassName>  {
+
+		main method {
+			System.out.println(value/"text");	
+		}
+	}
+
+19. Steps to develop a Java program?		
+    - Java program develop, compilation and execition
+      comes under 7 steps
+	1. Open notepad
+	2. Type Java code
+	3. Save this program with .java extension
+	   in the project directory
+
+	4. Open command prompt
+	5. Change drive and directory path 
+	   to the project directory in which 
+	   java program is saved
+	
+	6. Compile java program by usign 'javac' tool
+	7. Execute byte code by using 'java' tool	 
+
+20. Program #1: Develop a program to print HKProgrammingWorld on console
+
+	Step #1: Open notepad [press Start -> type notepad -> press Enter]
+
+	Step #2. Type below code
+
+		class FirstProgram {
+                    public static void main(String[] args) {
+			System.out.println("HKProgrammingWorld!");
+		    }
+		}
+			
+	3. Save this progarm with the name Example.java 
+	   in the folder "D:\FSJD\01CJ\01JB"
+	   Note: Create above folder in your system, then save java program
+
+	4. Open command prompt [press start -> type cmd -> press enter]
+
+	5. Change drive and directory path 
+		1. Type "D:" and press enter 
+		2. Type "cd D:\FSJD\01CJ\01JB" and pres enter
+		
+	6. Compile java program by using 'javac' tool
+		-> type "javac  Example.java"
+			  |-> FirstProgram.class
+			  
+	7. Execute byte code by using 'java' tool	 
+		-> type "java  FirstProgram"
+			   |-> Output: HKProgrammingWorld	
+
+21. What is developer, Compiler and JVM activities?
+     1. Developer role is developing a java program
+	1. Developing means 'Typing and Saving' a Java program is called development
+	2. We develop a program by using an Editor SW software 
+	3. We have 3 types of editor SWs	
+		|-> Basic editor	 -> Notepad*	
+		|-> Advanced Editor	 -> Notepad++, TextPad, Editplus*, Brackets	
+		|-> More Advanced Editor -> IDEs [Eclipse*, IntelliJ, STS, VS Code]
+		|-> For Initial chapters we will use Notepad then Editplus, then Eclipse 
+	
+     2. Compiler role is compiling a Java program		
+	1. Convering a source code to a Bytecode is called compilation
+	2. We use 'javac' command for compiling Java program
+	3. As part of compilation, Compiler perfroms below activities
+		|-> finding .java file with the given name in the PWD
+		|-> reading source code from this .java file	
+		|-> checking syntax of each statement
+		|-> converting SC into bytecode	
+		|-> saving this byte code in a new file with .class extension
+		    with the 'class name' as file name
+		    
+     3. JVM role is executing a Java program  				
+	1. Running the byte code and produce output is called exection
+	2. We use 'java' command for running Java byte code
+	3. As part of execution, JVM performs below activities
+		|-> finding the .class file with the given class name
+		|-> reading byte code from this .class file
+		|-> run the byte code by converting it into current OS ML
+		|-> printing output on console		
+
+	
+
+ 

@@ -1,0 +1,167 @@
+Day #7: More examples, Escape Sequence Characters
+======================================================
+Program #2: Develop a program to print your name on console 
+
+	Step #1: Open Notepad [Press start -> Type notepad -> Press enter key]
+	
+	Step #2: Type below code
+		
+		class NamePrinter {
+		      public static void main(String[] args) {
+		           System.out.println("Hari Krishna");
+		      }
+		}
+		
+	Step #3: Save above program with the name NamePrinter.java
+	         in the folder "D:\FSJD\01CJ\01JB"
+		 
+	Step #4: Open cmd prompt [Press start -> type cmd -> press enter key]	 
+	
+	Step #5: Change drive and directory path
+		  1. Type "D:"			 press enter
+		  2. Type "cd D:\FSJD\01CJ\01JB" press enter
+		  
+	Step #6: Compile NamePrinter.java by using 'javac' tool	  
+		  D:\FSJD\01CJ\01JB>javac NamePrinter.java
+					|-> NamePrinter.class
+					
+	Step #7: Execute NamePrinter.class by using 'java' tool	  
+		  D:\FSJD\01CJ\01JB>java NamePrinter
+					|-> O/P: Hari Krishna
+					
+Program #3: Develop a program to print your name with stars as below
+		  ************
+		* Hari Krishna *
+		  ************
+
+	//NamePrinterWithStars.java
+	class NamePrinterWithStars {
+	     public static void main(String[] args) {
+		  System.out.println("  ************  ");
+		  System.out.println("* Hari Krishna *");
+		  System.out.println("  ************  ");
+	     }
+	}
+
+	D:\FSJD\01CJ\01JB>javac NamePrinterWithStars.java
+			    |-> NamePrinterWithStars.class
+			    
+	D:\FSJD\01CJ\01JB>java NamePrinterWithStars
+			    |->   ************  
+				* Hari Krishna *
+				  ************  
+				  
+Program #4: Develop a program to print your name in two lines
+		I/P:			O/P:
+		HariKrishna		Hari
+					Krishna
+		//NameInTwoLines.java			
+		class NameInTwoLines {
+			public static void main(String[] args) {
+				System.out.println("Hari\nKrishna");
+			}			//\n is called escape sequence character
+		}				//it is used for inserting one new line
+						//it moves its right side characters to
+						//the next line
+		cmd>javac NameInTwoLines.java
+			|-> NameInTwoLines.class
+			
+		cmd>java NameInTwoLines
+			|-> Hari
+			    Krishna
+			
+Program #5: Develop a program to print your name as below
+		I/P	O/P
+		===	====				In this program we must use
+		 H	H				the esc character \t for inserting
+		 A		A			one tab space (8 spaces)
+		 R			R
+		 I				I
+		
+		//NamePattern.java
+		class NamePattern {
+			public static void main(String[] args) {
+				System.out.println("H");
+				System.out.println("\tA");
+				System.out.println("\t\tR");
+				System.out.println("\t\t\tI");
+			}
+		}
+		
+		cmd>javac NamePattern.java 
+			|-> NamePattern.class
+			
+		cmd>java NamePattern
+			|-> H
+			            A
+			                    R
+			                            I         		    
+
+Program #6: Develop a program to print above name pattern by using single Sopln		
+		//NamePatternSingleSopln.java
+		class NamePatternSingleSopln {
+		    public static void main(String[] args) {
+		         System.out.println("H\n\tA\n\t\tR\n\t\t\tI");
+		    }
+		}
+		
+		cmd>javac NamePatternSingleSopln.java
+			|-> NamePatternSingleSopln.class
+			
+		cmd>java NamePatternSingleSopln
+			|->H
+			           A
+		                            R
+			                             I
+
+Program #7: Develop a program to print your name in single quote and double quote
+		I/P		O/P
+		====		===			For printing ' and "	
+		Hari Krishna	'Hari Krishna'		we must use esc characters \' & \"
+		Hari Krishna	"Hari Krishna"
+		
+		//NameInQuotes.java
+		class NameInQuotes {
+			public static void main(String[] args) {
+			    System.out.println("\'Hari Krishna\'");
+			    System.out.println("\"Hari Krishna\"");
+			}
+		}
+		
+Program #8: Develop a program to print a folder/file path as below
+		I/P:
+		  D:\abc\xyz\pqr.txt
+		  
+		  D:\new\batch\snames.txt
+		  
+		//FilePath.java  
+		class FilePath {
+		   public static void main(String[] args) {
+			// System.out.println("D:\abc\xyz\pqr.txt"); //CE: illegal escape character
+			  
+			   System.out.println("D:\\abc\\xyz\\pqr.txt"); //no CE		
+		                                 //for printing a '\' we must use \\
+						 //because \ has meaning, for removing that	
+						//meaning we use \\
+						//for \\ only \ is printed
+						
+			System.out.println("D:\new\batch\snames.txt");	 //here no CE
+							//because \n \b \s
+						//are valid esc seq characters
+			
+			System.out.println("D:\\new\\batch\\snames.txt");
+						//to print \n as it is we must user \\n
+		   }
+		}
+		
+		cmd>javac FilePath.java
+		
+		cmd>java FilePath
+			D:\abc\xyz\pqr.txt
+			D:
+		        eatch names.txt
+			D:\new\batch\snames.txt
+			
+		     
+		  
+		  

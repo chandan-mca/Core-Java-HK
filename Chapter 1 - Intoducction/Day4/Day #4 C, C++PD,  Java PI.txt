@@ -1,0 +1,30 @@
+Day #4: C, C++ PL PD and Java PI
+===================================================================
+06. Why C and C++ languages are Platform Dependent?
+07. How Java achieved Platform Independency?
+
+06. Why C and C++ PLs are platform dependent?
+	- The C and C++ programs are compiled targetting to one particular OS
+
+	- The C and C++ programs compiled code contains Machine Langauge 
+	  of a particular OS whose format is not understandable to differnt OS.
+	  Hence this compiled code can not be executed by different OS, 
+	  so C and C++ programs are called platform dependent
+	  
+	- Below diagram shows  C and C++ platform dependency
+
+07. How Java achieved PI?
+
+	- In Java, the program is not compiled targetting to any particular OS
+
+	- In Java, the program is compiled into bytecode, 
+	  which is an intermediate language all OS
+	- Then later this byte code is executed by JVM 
+	  by translated it into the current OS's ML code
+	  
+	- We have separate JVM for every OS, 
+	   hence the same compiled code, byte code,
+	   can be executed in all OS with the help of JVM
+	- Hence Java achieved PI, that is WORA (Write Once Run Anywhere).
+	
+	- Below diagram shows Java's PI
