@@ -1,0 +1,183 @@
+=====================================================
+Editplus TOC
+=====================================================
+01) Problems of Notepad? 
+02) Need of advanced editor?
+03) What is an Editplus?
+04) What is use/advantages of Editplus?
+05) How to install editplus?
+06) Running editplus?
+07) Stopping back up files creation in editplus?
+08) Procedure to develop a program in editplus?        
+09) Procedure to save a program in editplus?        
+10) Configuring Compiler and JVM in editplus?       
+11) Compiling and executing directly from editplus? 
+12) CEs and REs displaying format?                  
+13) Rule in developing a class w.r.t editplus?      
+14) Procedure for creating multiple java files?     
+15) Editplus Short-cuts for fast development?                             
+================================================================
+1) Problems of Notepad
+  The main problem of notepad slow development, 
+  because it does not provide short-cuts for a developing code fast
+
+  below are thw list of problems with notepad
+================================================================
+	Typing Requirements		Notepad	   Editplus	
+================================================================
+	1. Code template	  	  N		Y	
+	2. Code indentation		  N		Y
+	3. Syntax highlighting		  N		Y
+	4. Auto .java extension		  N		Y
+	5. Auto comilation and execution  N		Y
+	6. Auto saving 			  N		Y
+	7. Duplicate line		  N		Y
+	8. Case change			  N		Y
+	9. Delete word and delete line	  N		Y
+	10. Column selection		  N		Y
+	11. Inserting date and time	  N		Y
+================================================================
+
+02) Need of advanced editor?
+	- For supporting fast developemnt by giving
+	  typing shortcuts, options to select, by giving pre typed code.
+
+03) What is an editplus?
+	- Like notepad, editplus is also an text editor
+	- It is used for developing 
+		1. a plain text file
+		2. a html page
+		3. any programming language programs 
+	- with less typing and fast development 	
+
+04) What is use of editplus?
+	- editplus provides fast development
+	  by giving shorts for type code, compiling and running
+
+05) Advantages of editplus?
+	- we can achieve fast development
+	- with less typing
+
+06) How to install editplus?
+	- open browser
+	- search 'Editplus download'
+	- click 'Editplus Download' link
+	- click 'Download' link
+	- Ediplus software exe file is download
+
+	- After downloading, click in exe file
+	- Once Installation is started, click on the 
+	  the button showing on the series of windows
+
+        - After installtion is completed,
+	  on desktop you can see a shortcut file
+	  'Ediplus' to start editplus
+
+07) Running editplus?
+	- Double click 'Editplus' file available on desktop
+	- Click Trail, click 'I Agree' 
+	- Editplus is not a free software, it works only 30 days
+	- After 30 days drag and hide the 'I Agree' window
+	- You can continue using editplus software
+
+08) Stopping back up files creation in editplus?
+	- Click 'Tools' menu
+	- Click 'Preferences'
+	- Click 'Files'
+	- Uncheck 'Create back file'
+	- Click 'Ok'
+
+09) Configuring Compiler and JVM in editplus?
+	1. Click 'Tools' 
+	2. Click 'Configure User Tools'
+	3. Click 'Add Tool -> Program' to configure Compiler
+	   Enter below details
+		Menu Text    : Compiler
+		Command      : Clicking Browse button -> open 'C:\jdk-21\bin\javac.exe' 
+		Argument     : Click Drop down button -> click 'File Name' 
+		Initial Dir  : Click Drop down button -> click 'File Dir' 
+	   Click Apply, repeate same procedure for conguring JVM
+
+	4. Click 'Add Tool -> Program'
+	   Enter below details
+		Menu Text    : JVM
+		Command      : Select C:\jdk-21\bin\java.exe 
+		Argument     : Choose option 'File Name without extension' 
+		Initial Dir  : Choose 'File Dir' from drop down button
+	   Click Apply, Click Close
+	   
+	5. Compier and JVM softwares are cofigured in Editplus
+
+10) Procedure to develop a program in editplus?        
+	1. Open editplus
+	2. Hide the 'I Agree' window
+	3. Click File -> New -> Java
+	4. Java program template is opened
+	5. Type class name as "Example"
+	6. Save the file with the name Example
+	7. While saving file type name as only Example, 
+	   Editplus automatically adds .java extension 
+	8. Java program is ready with the name Exampe.java
+
+11) Compiling and executing directly from editplus? 
+	- Press 'Ctrl + 1' for comilation, then press 'space' bar
+	- Press 'Ctrl + 2' for execution, then press 'space' bar
+
+12) CEs and REs displaying format?
+	- In Editplus also the CEs and REs are displayed
+	  same as earlier when we compile and run in command prompt
+
+13) Rule in developing a class w.r.t editplus? 
+	- The class name and java file name must be same
+	- There is no compile time error
+	- but we will get runtime error: ClassNotFoundException
+	- Solution: Configure 'java' tool again with class name as argument
+	
+14) Procedure to configure 'java' tool with classname
+	- Click 'Tools' menu
+	- Click 'Configure User Tools'
+	- Click 'Add Tool'
+	- Click 'Program'
+	- Enter below details
+		Menu text	: JVM with classname
+		Command		: select 'C:\jdk-22\bin\java.exe'
+		Argument	: select 'Current Selection'
+		Initial Dir	: select File Dir
+	- Click OK
+	
+	- Press 'Ctrl + 1' to compile
+	- For execution -> select classname -> press 'ctrl + 3'
+
+15) Procedure for creating multiple java files?     
+	- Click on File -> New -> Java -> save program
+	- Repeate same procedure for creating multiple java file
+
+16) Editplus short cuts
+
+	ctrl + 1 => compilation [configure]
+	ctrl + 2 => execute 	[configure]
+	ctrl + 3 => execute	[configure]
+
+	ctrl + j		=> duplicate line
+
+	ctrl + U		=> upper case
+	ctrl + l		=> lower case
+	ctrl + shift + u	=> title case
+	ctrl + k		=> inverted case 
+
+	ctrl + d		=> date 
+	ctrl + alt + d		=> long date
+	ctrl + m		=> time
+	ctrl + shift + m	=> long time
+
+	alt + delete		=> delete word
+	alt + shift + delete	=> delete line
+
+	[alt + c] + [left/right arrow] + [up/down arrow] => column selection
+		after changing the text press 'esc' key
+
+	[alt + shift] + [up/down arrow] => moving lines to up and down
+
+	ctrl + tab		=> moving to next program
+	ctrl + shift + tab	=> moving to previous program
+

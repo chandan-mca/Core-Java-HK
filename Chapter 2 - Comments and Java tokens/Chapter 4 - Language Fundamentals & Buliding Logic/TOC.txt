@@ -1,0 +1,29 @@
+Chapter #4: Language fundamentals and Building Logic
+=====================================================
+01. What is a language, different tyepes of languages?
+02. What are the diff b/w Speaking Language and Programming Language?
+03. What are the diff programming languages we have?
+04. What is the use of a programming language?
+05. What is a program, why a program?
+06. What is a logic and why logic?
+07. What is the meaning of manual and automation calculation?
+08. What are the advantages of automation?
+
+09. What are the diff activities we perform as part of one operation in a program?
+10. What are the language fundamentals?
+11. What are diff language fundamentls available in every langauge?
+
+12. What is the Purpose of 
+	1. Datatypes
+	2. Operators
+	3. Control flow statements
+	4. Exception handling
+
+	5. return keyword
+	6. throw, throws, try, catch keywords
+
+13. Steps to built logic by using above Language fundamentals
+
+14. One sample program, execution flow with diff test cases?
+
+
